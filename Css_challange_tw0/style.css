@@ -1,0 +1,42 @@
+/* Step 1: Define color variables using hex values or rgb values */
+root { 
+    --primary-color: rgb(255,0,0) /* 1a -  a primary color */
+    --secondary-color: rgb(0,255,0) /* 1b -  a secondary color */
+    --text-color: rgb(0,0,255) /* 1c -  a text color */
+    --card-bg: rgb(255, 255, 255) /* 1d - the background color for the card */
+}
+
+/* Step 2: Style the card */
+body {
+    background-color: rgb(255,0,0); /* set background-color to the theme primary color */ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.profile-card {
+    background-color: var(--primary-color);/* 2a - add a background color using var( )  */
+    background-image: url(https://www.aquithie.com/wp-content/uploads/2023/04/47978_2198408.jpg);/* 2b - add a background image */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--text-color);/* 2c - define the text color using  var( )*/
+    box-shadow: rgba(red, green, blue, alpha);/* 2d - add a box shadow using rgba */ 
+  }
+  
+  /* Step 3: Add styles for the image and text */
+    .avatar {
+        border-radius: 50%;
+        border: 3px solid rgb(0,255,0);/*3a - set the border to 3px solid & secondary color */
+        /* border: */
+        width: 100px;
+        height: 100px;
+    }
+
+    .bio {
+        color: rgb(0,255,0);/* 3b -  set colour to secondary color */
+        /*color:*/
+    }
