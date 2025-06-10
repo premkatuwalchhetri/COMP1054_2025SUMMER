@@ -1,0 +1,187 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #eef2f7;
+  color: #222;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+a :visited {
+  color: red;
+}
+
+
+
+p {
+  color: white;
+  background-color: black;
+  padding: 15px;
+  font-size: large;
+  font-style: italic;
+}
+
+h3 {
+  color: navy;
+  background-color: orange;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+
+h3+p {
+  color: blue;
+  background-color: grey;
+  padding: 20px;
+}
+
+
+header h1 {
+  position: relative;
+  font-family: cursive;
+  font-size: 3rem;
+  color: orange;
+}
+
+header h2 {
+  position: relative;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+header {
+  background: url('https://epicode.com/wp-content/uploads/2022/08/html-e-css-1.jpg') center/cover no-repeat;
+  color: orange;
+  padding: 60px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.summary {
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 20px;
+  margin: 2rem;
+  border-radius: 10px;
+}
+
+.summary P {
+  color: white;
+  padding: 20px;
+  position: inherit;
+  text-decoration: underline;
+}
+
+.summary p {
+	font: georgia; 
+	text-align: center;
+	}
+
+.preamble {
+	clear: right; 
+	}
+
+.supporting {	
+  color: blue;
+	}
+
+  .sidebar {
+  color: white;
+  position: relative;
+  margin: 0;
+  top: 0;
+}
+
+.sidebar .wrapper {
+  background: black;
+  font-size: 1rem;
+  width: auto;
+}
+
+.sidebar h3 {
+  text-indent: 0;
+  background: orange;
+  margin: 25px 0 15px 0;
+  font-weight: bold;
+}
+
+.sidebar h3:first-child {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  padding-left: 20px;
+}
+
+.sidebar li {
+  padding: 8px;
+  margin: 0;
+  align-items: center;
+}
+
+.design-selection nav ul {
+  display: grid;
+}
+
+.design-selection li {
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.design-selection li:hover {
+  background: white;
+}
+
+.design-archives li:hover {
+  background: white;
+}
+
+.resources li:hover {
+  background: white;
+}
+
+.resources li:visited {
+  background: white;
+}
+
+footer {
+  color: black;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+}
+
+footer a {
+  color: violet;
+  background-color: blue;
+  padding: 20px;
+  font-style: italic;
+}
+
+
+
