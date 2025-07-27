@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;  /* it include padding and border in element's total size */
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+  color: #212121;
+  line-height: 1.6;
+}
+
+header {
+  background: #343a40;
+  color: white;
+  padding: 40px 20px; /* adding padding in the top and bottom and left and right to balance */
+  text-align: center;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* it adds a shadow the element */
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: auto auto; /* it keeps the grid with two columns and makess each sized automatically based on their content */
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 20px;
+  background-color: #343a40;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+button.navbar-toggler {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.jumbotron {
+  background: white;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.jumbotron h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.jumbotron .btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.album {
+  padding: 2rem 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row {
+  display: grid; /* it makes a responsive grid */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* it makes each column 280px wide and can grow to fill available space */
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex; /* it enables a flexbox layout to align and distribute the child elements easil */
+  flex-direction: column;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background: #555;
+  color: white;
+  display: flex;
+  align-items: center;  /* making the items in the center */
+  justify-content: center;
+}
+
+.card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /*keeping the space between the contents */
+  flex: 1; /* it allows the elements to fill available space equally with the other flex items */
+}
+
+.btn-group {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btn-group .btn {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #ccc;
+  background: white;
+  color: #333;
+  font-size: 0.8rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #6c757d;
+  background: #f1f1f1;
+  display: grid;
+  place-items: center;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.float-right {
+  float: right;
+}
