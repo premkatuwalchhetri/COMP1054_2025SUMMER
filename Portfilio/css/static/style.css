@@ -1,0 +1,241 @@
+/* locally hosted font for headings */
+@font-face {
+  font-family: 'Oswald';
+  src: url('./fonts/Oswald-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*this is th external font for body text */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/* this is the universal selector which target all elements on the page, ensuring consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; 
+  font-size: 19px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  color: white;
+  background-color: navy;
+  background: 
+  /* this is a linear-gradient to create a semi-transparent navy overlay on top of the background image. This helps keep the text readable, while still showing the image underneath. */
+  linear-gradient(rgba(0, 0, 128, 0.7), rgba(0, 0, 128, 0.7)),
+  url('css/static/369607309_308247985030071_4878679989445956783_n.jpg') no-repeat center center/cover;
+
+}
+
+/* Class selector for styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+
+/* ID selector */
+#navbar {
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between;
+  align-items: center;
+  background-color: navy;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* Descendant selector example */
+#navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/*  this is a pseudo-class selector used to style anchor elements when the user hovers over them with a mouse */
+
+#navbar a:hover {
+  color: red;
+}
+
+#home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4rem 2rem;
+  background-color: navy;
+}
+
+.home-content h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-content h1 {
+  font-size: 2rem;
+}
+
+.photo-section img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-top: 1rem;
+}
+
+.section-title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 32px;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 32px;
+  text-align: center;
+}
+
+.about-container p {
+  font-size: 20px;
+  margin: auto;
+  padding: 2rem;
+  background-color: blue;
+  border-radius: 10px;
+}
+
+.skills-list {
+  background-color: blue;
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+  /* this box-shadow creates a subtle drop shadow, giving depth to the element */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skills-list p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.projects-container {
+  /* this is a grid layout for projects for mobile */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* in larger screens it show projects in two columns */
+@media (min-width: 768px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.projects-item {
+  background: blue;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  /* this is for full width inside the grid */
+  width: 100%; 
+  text-align: center;
+}
+
+.projects-item h2 {
+  margin-bottom: 1rem;
+}
+
+.projects-item p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+#projects a {
+  padding: 10px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+#projects a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+#projects p {
+  font-size: 0.9rem;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  padding: 2rem;
+  background-color: blue;
+  border-radius: 10px;
+}
+
+.contact-container p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.contact-container a {
+  color: #87cefa;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-container a:hover {
+  text-decoration: underline;
+}
+
+#footer {
+  background: #010101;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+#footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #e71a1a;
+}
+
+#footer p {
+  font-size: 0.9rem;
+}
+
+/* this is a responsive example which increase padding on larger screens */
+@media (min-width: 768px) {
+  .about-container, .contact-container {
+    padding: 4rem;
+  }
+}
+
